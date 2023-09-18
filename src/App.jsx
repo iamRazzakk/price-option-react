@@ -1,33 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import DaisyNav from './components/DaisyNav/DaisyNav'
+import NavBar from './components/NavBar/NavBar'
+import PriceOption from './components/PriceOptions/PriceOptions'
+import PriceOptions from './components/PriceOptions/PriceOptions'
+import LineChart from './components/LineChart/LineChart'
+import Phones from './components/Phones/Phones'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* <DaisyNav></DaisyNav> */}
+      <NavBar></NavBar>
+      <PriceOptions></PriceOptions>
+      <LineChart ></LineChart>
+      <Phones></Phones>
     </>
   )
 }
